@@ -1,0 +1,46 @@
+{
+  "name": "aws-explorer",
+  "version": "1.0.0",
+  "description": "AWS Explorer",
+  "author": "Philip Callender",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node -r esm server/index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "aws-regions": "^2.1.0",
+    "aws-sdk": "^2.643.0",
+    "colors": "^1.4.0",
+    "commander": "^5.0.0",
+    "exec-sh": "^0.3.4",
+    "nuxt": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt-buefy": "^0.3.2",
+    "vis": "^4.21.0-EOL"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@tooltwist/juice-client": "^1.0.16",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.19.1",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2"
+  }
+}

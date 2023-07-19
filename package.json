@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "aws-regions": "^2.1.0",
-    "aws-sdk": "^2.814.0",
+    "aws-sdk": "^2.1354.0",
     "colors": "^1.4.0",
     "commander": "^5.0.0",
     "exec-sh": "^0.3.4",
